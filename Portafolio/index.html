@@ -1,0 +1,311 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Riveros | Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/Logo.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container hero-section">
+        <div class="row align-items-center">
+
+            <div class="col-lg-5">
+                <p class="mini-text">Disponible para nuevos proyectos</p>
+
+                <h1 class="titulo">Hola, soy<br><span>David Riveros</span></h1>
+                <p class="descripcion">
+                    Soy un desarrollador de VideoJuegos, funcionales y con diseños impactantes.
+                </p>
+
+                <div class="d-flex gap-3 mt-4">
+                    <button class="btn btn-gold">Ver proyectos</button>
+                    <button class="btn btn-outline-light d-inline-flex align-items-center gap-2"><img
+                            src="Imagenes/Whats.png" class="mini-icon" alt="WhatsApp"><span>Contactarme</span></button>
+                </div>
+            </div>
+            <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                <div class="position-relative hero-container">
+                    <img src="Imagenes/Fondo.jpeg" class="img-fluid hero-bg" alt="Fondo Dorado">
+
+                    <img src="Imagenes/Yotas.png" class="position-absolute start-50 top-50 translate-middle hero-avatar"
+                        alt="Avatar">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="container mt-5" id="sobre">
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <div class="box-info">
+                    <h5>Sobre mi</h5>
+
+                    <p>Soy estudiante de la Fundación Universitaria Compensar, donde curso la carrera de Ingeniería de
+                        Software. Lo que más me apasiona de mi profesión es el desarrollo de videojuegos utilizando
+                        distintos lenguajes como Java y C#. Me gusta aprender cosas nuevas y estar siempre atento a las
+                        últimas tecnologías.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="box-info">
+                    <h5>Habilidades</h5>
+
+                    <div class="skills">
+
+                        <div>
+                            <img src="Imagenes/Angular.png">
+                            <span>Angular</span>
+                        </div>
+
+                        <div>
+                            <img src="Imagenes/Boostrap.png">
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <div>
+                            <img src="Imagenes/MySQL.png">
+                            <span>MySQL</span>
+                        </div>
+
+                        <div>
+                            <img src="Imagenes/Java.png">
+                            <span>Java</span>
+                        </div>
+
+                        <div>
+                            <img src="Imagenes/Unity.png">
+                            <span>Unity</span>
+                        </div>
+
+                        <div>
+                            <img src="Imagenes/C.png">
+                            <span>C#</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container mt-5" id="proyectos">
+
+        <h5 class="section-title">Proyectos destacados</h5>
+
+        <div class="row g-4 mt-2">
+
+            <!-- ECO -->
+            <div class="col-lg-4">
+                <div class="project-card">
+
+                    <img src="Imagenes/Eco.jpeg" class="project-img">
+
+                    <h4>Eco warrior</h4>
+
+                    <p>Desarrollé, en colaboración con un equipo de trabajo, un videojuego enfocado en la reforestación
+                        y la conciencia ambiental.</p>
+                    <button class="btn btn-small">Unity</button>
+                    <button>C#</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="project-card">
+
+                    <img src="Imagenes/Ultima.jpeg" class="project-img">
+
+                    <h4>Última palabra</h4>
+                    <p>Desarrollé, junto a un compañero, una versión innovadora del juego “Ahorcado” con mecánicas de
+                        agilidad y estrategia.</p>
+                    <button class="btn btn-small">Java</button>
+                    <button class="btn btn-small" data-bs-toggle="modal" data-bs-target="#ultimaModal">Ver más</button>
+
+                </div>
+            </div>
+
+            <!-- GEO -->
+            <div class="col-lg-4">
+                <div class="project-card">
+
+                    <img src="Imagenes/Geoeventos.jpeg" class="project-img">
+
+                    <h4>Geoeventos</h4>
+
+                    <p>Desarrollé una plataforma e-commerce con configurador de productos y sistema de reservas para
+                        equipos audiovisuales.</p>
+                    <button class="btn btn-small">WordPress</button>
+                    <button class="btn btn-small">Hostinger</button>
+                    <button class="btn btn-small" data-bs-toggle="modal" data-bs-target="#geoModal">Ver más</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="container mt-5" id="servicios">
+
+        <h1 class="services-title">Servicios</h1>
+        <p class="services-subtitle">Soluciones digitales con enfoque gaming</p>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-lg-3">
+                <div class="service-card">
+                    <img src="Imagenes/Control.png">
+                    <p>Páginas modernas y futuristas para tiendas de videojuegos, comunidades gamer, streamers y
+                        proyectos digitales.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="service-card">
+                    <img src="Imagenes/Cohete.png">
+                    <p>Aplicaciones rápidas y dinámicas con experiencias fluidas tipo launcher gaming, catálogos de
+                        juegos y dashboards.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="service-card">
+                    <img src="Imagenes/Firebase.png">
+                    <p>Autenticación, bases de datos en tiempo real, almacenamiento en la nube y paneles administrativos
+                        seguros.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="service-card">
+                    <img src="Imagenes/Pincel.png">
+                    <p>Interfaces gaming atractivas, intuitivas y optimizadas para mejorar la experiencia del usuario en
+                        web y aplicaciones.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- CONTACTO -->
+    <section class="container mt-5 mb-5" id="contacto">
+        <h2>Contactos</h2>
+        <div class="contact-box">
+            <div>
+                <P>¿Tienes un proyecto en mente? Hablemos y hagamoslo realidad.</P>
+            </div>
+
+            <div class="d-flex gap-3 flex-wrap">
+
+                <div class="contact-item">
+                    <img src="Imagenes/Whats2.png">
+                    <span>+57 302 3431797</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="Imagenes/Gmail.png">
+                    <span>dariops151@gmail.com</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <img src="Imagenes/Logo.png">
+        <p>© 2026 David Riveros - Todos los derechos reservados</p>
+    </footer>
+
+    <div class="modal fade" id="ultimaModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content custom-modal">
+
+                <div class="modal-header border-0">
+                    <h3>Última palabra</h3>
+
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <img src="Imagenes/Ultima.jpeg" class="modal-img">
+
+                    <p class="mt-4">Diseñé y programé junto a un compañero una versión innovadora del clásico
+                        "ahorcado". El juego integra un minijuego de agilidad donde el jugador debe esquivar bombas; el
+                        éxito en esta fase otorga ventajas estratégicas para el siguiente nivel, mejorando la dinámica
+                        de juego.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="geoModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content custom-modal">
+
+                <div class="modal-header border-0">
+                    <h3>Geoeventos</h3>
+
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <img src="Imagenes/Geoeventos.jpeg" class="modal-img">
+
+                    <p class="mt-4">Realice una base de e-commerce consiste en crear una pagina dual que combine un
+                        configurador de productos con carga de archivos para la imprenta y un sistema de reservas con
+                        calendario de disponibilidad para los equipos audiovisuales, centralizando la gestión de
+                        inventario y pagos en una interfaz intuitiva y segmentada.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
